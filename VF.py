@@ -23,7 +23,7 @@ def campo(t, z):
     return [x**2 - y**2, 2*x*y]
 
 # Condición inicial y solución (dense_output para evaluar en tiempos arbitrarios)
-z0 = [1.0, 2.0]         # condición inicial (puedes cambiarla)
+z0 = [2.0, 1.0]         # condición inicial (puedes cambiarla)
 t_span = (0.0, 4.0)     # intervalo de tiempo de integración
 sol = solve_ivp(campo, t_span, z0, max_step=0.005, dense_output=True)
 
